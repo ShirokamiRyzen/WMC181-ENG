@@ -2,7 +2,7 @@
 // @name         TP-Link WMC181 Router English Translator
 // @namespace    http://tampermonkey.net/
 // @version      1.1
-// @description  Automatically translates TP-Link WMC181 / China Mobile router admin panels (wifi.cmcc / 192.168.1.254) to English.
+// @description  Automatically translates TP-Link WMC181 / China Mobile router admin panels (wifi.cmcc) to English.
 // @author       Antigravity
 // @match        http://wifi.cmcc/*
 // @match        https://wifi.cmcc/*
@@ -41,7 +41,7 @@
         "启用": "Enable",
         "禁用": "Disable",
         "开启": "Enable",
-        "关闭": "Disable",
+        "关闭": "Close",
         "已开启": "Enabled",
         "已关闭": "Disabled",
         "已连设备": "Connected Devices",
@@ -61,8 +61,8 @@
 
         // Top Tabs / Main Menus
         "网络状态": "Network Status",
-        "设备管理": "Device Management",
-        "应用管理": "Application Management",
+        "设备管理": "Device Manager",
+        "应用管理": "Application Manager",
         "路由设置": "Router Settings",
         "高级设置": "Advanced Settings",
         "系统工具": "System Tools",
@@ -128,7 +128,7 @@
         "小时": "Hours",
         "天": "Days",
 
-        // Device Management List
+        // Device Manager List
         "终端": "Devices",
         "终端名称": "Device Name",
         "设备名称": "Device Name",
@@ -147,6 +147,45 @@
         "解禁": "Unblock",
         "禁用": "Block",
         "网络访问限制": "Internet Access Blocked",
+        "主人网络": "Main Network",
+        "黑/白名单": "Access Control",
+        "本机": "This Device",
+        "有线连接": "Wired",
+        "无线连接": "Wireless",
+        "全部": "All",
+        "选择": "Select",
+        "网站": "Website",
+        "允许网站": "Allowed Websites",
+        "添加新允许网站": "Add New Allowed Website",
+        "新允许网站": "New Allowed Website",
+        "删除全部": "Delete All",
+        "删除所选": "Delete Selected",
+        "上网时间段限制": "Internet Time Limit",
+        "上网时间限制": "Internet Time Limit",
+        "禁止访问网站限制": "Website Access Limit",
+        "网站访问限制": "Website Access Limit",
+        "添加允许上网时间段": "Add Allowed Internet Time Slot",
+        "添加禁止访问 of 网站": "Add Blocked Website",
+        "添加禁止访问的网站": "Add Blocked Website",
+        "禁止访问的网站": "Blocked Website",
+        "禁止访问网站": "Blocked Website",
+        "启用此功能需要禁用硬件NAT，确认是否启用此功能": "Enabling this feature requires disabling hardware NAT. Do you want to enable this feature?",
+        "启用此功能需要关闭硬件NAT，确认是否启用此功能": "Enabling this feature requires disabling hardware NAT. Do you want to enable this feature?",
+        "关闭硬件NAT": "Disable Hardware NAT",
+        "此功能": "this feature",
+        "需要": "requires",
+        "确认是否": "are you sure you want to",
+        "请选择要禁止访问的网站，点击“确定”按钮": "Please select the website to block, then click the \"Confirm\" button.",
+        "请选择要禁止访问的网站，然后点击“确定”按钮": "Please select the website to block, then click the \"Confirm\" button.",
+        "请选择要禁止访问的网站，然后点击 \"确定\" 按钮": "Please select the website to block, then click the \"Confirm\" button.",
+        "请选择要禁止访问的网站，然后点击“确定” 按钮": "Please select the website to block, then click the \"Confirm\" button.",
+        "请选择要禁止访问 of 网站，然后点击 \"确定\"按钮": "Please select the website to block, then click the \"Confirm\" button.",
+        "请选择要禁止访问的网站，然后点击 \"确定\"按钮": "Please select the website to block, then click the \"Confirm\" button.",
+        "请选择要禁止访问的网站，然后点击": "Please select the website to block, then click",
+        "请选择要禁止访问的网站": "Please select the website to block",
+        "请选择": "Please select",
+        "然后点击": ", then click",
+        "按钮": "button",
         "我的路由器": "My Router",
         "主路由器": "Main Router",
         "子路由器": "Sub-Router",
@@ -165,6 +204,34 @@
         "静态路由": "Static Routing",
         "绑定": "Binding",
         "ARP绑定": "ARP Binding",
+        "模式": "Mode",
+        "当前模式": "Current Mode",
+        "黑名单": "Blacklist",
+        "白名单": "Whitelist",
+        "精选应用": "Featured Apps",
+        "已安装应用": "Installed Apps",
+        "网络异常，精选应用无法显示。": "Network anomaly, featured applications cannot be displayed.",
+        "重试": "Retry",
+        "路由器可用空间": "Available Space",
+        "可用空间": "Available Space",
+        "大小": "Size",
+        "版本": "Version",
+        "进入": "Enter",
+        "IP与MAC绑定": "IP & MAC Binding",
+        "管理员身份限定": "Restrict Admin Access",
+        "管理员": "Admin",
+        "自动清理": "Auto Cleanup",
+        "清理": "Cleanup",
+        "无线桥接": "Wireless Bridge",
+        "无线设备接入控制": "Wireless Access Control",
+        "接入控制": "Access Control",
+        "信号调节": "Signal Adjustment",
+        "无线定时开关": "Wireless Schedule",
+        "定时开关": "Schedule Switch",
+        "正在加载，请稍候": "Loading, please wait",
+        "正在加载，请稍候……": "Loading, please wait...",
+        "正在加载，请稍候...": "Loading, please wait...",
+        "正在加载，请稍候......": "Loading, please wait...",
 
         // System Settings & Diagnostics
         "修改管理员密码": "Change Admin Password",
@@ -206,9 +273,53 @@
         "千比特": "Kbps",
         "波特率": "Baud Rate",
         "无限制": "Unlimited",
+        "2.4G访客网络": "2.4G Guest Network",
+        "5G访客网络": "5G Guest Network",
+        "未开启": "Disabled",
+        "上网": "Internet",
+        "规则": "Rule",
+        "新的": "New",
+        "禁止": "Block",
+        "访问": "Access",
+        "允许": "Allow",
     };
 
-    // Regular expression rules for dynamic content and substring translation
+    // Helper to replace text with proper spacing around English word boundaries
+    function replaceWithSpacing(text, key, replacement) {
+        if (!text.includes(key)) return text;
+        let index = 0;
+        const keyLen = key.length;
+        while ((index = text.indexOf(key, index)) !== -1) {
+            const prefix = text.substring(0, index);
+            const suffix = text.substring(index + keyLen);
+
+            let insertSpaceBefore = false;
+            let insertSpaceAfter = false;
+
+            if (prefix.length > 0) {
+                const lastChar = prefix.slice(-1);
+                if (/[a-zA-Z0-9]/.test(lastChar) && /^[a-zA-Z0-9]/.test(replacement)) {
+                    insertSpaceBefore = true;
+                }
+            }
+
+            if (suffix.length > 0) {
+                const firstChar = suffix.charAt(0);
+                if (/[a-zA-Z0-9]/.test(firstChar) && /[a-zA-Z0-9]$/.test(replacement)) {
+                    insertSpaceAfter = true;
+                }
+            }
+
+            const beforeStr = insertSpaceBefore ? ' ' : '';
+            const afterStr = insertSpaceAfter ? ' ' : '';
+
+            text = prefix + beforeStr + replacement + afterStr + suffix;
+            index += beforeStr.length + replacement.length + afterStr.length;
+        }
+        return text;
+    }
+
+    // Regular expression rules for dynamic content (e.g. counters, models, version numbers)
     const regexRules = [
         { pattern: /产品型号\s*[:：]\s*(\w+)/g, replace: 'Product Model: $1' },
         { pattern: /软件版本\s*[:：]\s*([\d.]+)/g, replace: 'Software Version: $1' },
@@ -218,15 +329,8 @@
         { pattern: /已连设备/g, replace: 'Connected Devices' },
         { pattern: /(\d+)个设备/g, replace: '$1 Devices' },
         { pattern: /(\d+)个/g, replace: '$1' },
+        { pattern: /(\d+)台/g, replace: '$1' },
         { pattern: /技术支持热线\s*([\d-]+)/g, replace: 'Technical Support Hotline: $1' },
-        { pattern: /2.4G访客网络/g, replace: '2.4G Guest Network' },
-        { pattern: /5G访客网络/g, replace: '5G Guest Network' },
-        { pattern: /访客网络/g, replace: 'Guest Network' },
-        { pattern: /添加新路由/g, replace: 'Add New Router' },
-        { pattern: /退出/g, replace: 'Logout' },
-        { pattern: /未开启/g, replace: 'Disabled' },
-        { pattern: /已开启/g, replace: 'Enabled' },
-        { pattern: /匿名主机/g, replace: 'Anonymous Host' },
     ];
 
     // WeakMaps to prevent redundant attempts to translate static/untranslatable text
@@ -236,32 +340,45 @@
     // Check for Chinese characters
     const chineseRegex = /[\u4e00-\u9fa5]/;
 
-    // Translate a single string
-    function getTranslation(text) {
-        const trimmed = text.trim();
-        if (!trimmed) return null;
+    // Sort dictionary keys by length (longest first) to match whole phrases before words
+    const sortedDictKeys = Object.keys(translationMap).sort((a, b) => b.length - a.length);
 
-        // 1. Try exact match in map
-        if (translationMap[trimmed] !== undefined) {
-            return translationMap[trimmed];
-        }
+    // Translate a single string using regex rules, exact dictionary, and substring fallback
+    function translateString(text) {
+        if (typeof text !== 'string' || !text) return text;
 
-        // 2. Try regex rules
-        let replaced = trimmed;
-        let matched = false;
+        // Normalize text by removing spaces between Chinese characters (common in UI button spacing, e.g. "确 定" -> "确定")
+        let result = text.replace(/([\u4e00-\u9fa5])\s+([\u4e00-\u9fa5])/g, '$1$2');
+
+        // Also normalize non-breaking spaces and other weird whitespaces to standard spaces
+        result = result.replace(/[\u00a0\u2000-\u200a\u202f\u205f\u3000]/g, ' ');
+
+        // 1. Apply regex rules first (for dynamic patterns like "已连设备: 3个")
         for (const rule of regexRules) {
-            if (rule.pattern.test(trimmed)) {
-                rule.pattern.lastIndex = 0; // Reset index for global regexes
-                replaced = replaced.replace(rule.pattern, rule.replace);
-                matched = true;
+            // Use state-free check by making sure pattern is evaluated cleanly
+            const flags = rule.pattern.flags.replace('g', '');
+            const tempRegex = new RegExp(rule.pattern.source, flags);
+            if (tempRegex.test(result)) {
+                result = result.replace(rule.pattern, rule.replace);
             }
         }
 
-        if (matched && replaced !== trimmed) {
-            return replaced;
+        // 2. Exact match check on the trimmed result
+        const trimmed = result.trim();
+        if (translationMap[trimmed] !== undefined) {
+            return result.replace(trimmed, translationMap[trimmed]);
         }
 
-        return null;
+        // 3. Substring replacement for any remaining Chinese characters
+        let changed = false;
+        for (const key of sortedDictKeys) {
+            if (result.includes(key)) {
+                result = replaceWithSpacing(result, key, translationMap[key]);
+                changed = true;
+            }
+        }
+
+        return result;
     }
 
     // Determine if text node should be translated
@@ -282,16 +399,11 @@
         if (!shouldTranslateNode(node)) return;
 
         const val = node.nodeValue;
-        const leadingWs = val.match(/^\s*/)[0];
-        const trailingWs = val.match(/\s*$/)[0];
-        const trimmed = val.trim();
-
-        const translated = getTranslation(trimmed);
-        if (translated !== null) {
-            node.nodeValue = leadingWs + translated + trailingWs;
-            nodeStateMap.set(node, node.nodeValue);
+        const translated = translateString(val);
+        if (translated !== val) {
+            node.nodeValue = translated;
+            nodeStateMap.set(node, translated);
         } else {
-            // Store that we attempted and failed, to avoid retrying this exact value
             nodeStateMap.set(node, val);
         }
     }
@@ -326,8 +438,8 @@
         for (const attr of attributes) {
             if (shouldTranslateAttribute(element, attr)) {
                 const val = element.getAttribute(attr);
-                const translated = getTranslation(val);
-                if (translated !== null) {
+                const translated = translateString(val);
+                if (translated !== val) {
                     element.setAttribute(attr, translated);
                     elementStateMap.set(element, attr + ':' + translated);
                 } else {
@@ -344,7 +456,7 @@
             translateTextNode(root);
         } else if (root.nodeType === Node.ELEMENT_NODE) {
             translateAttributes(root);
-            
+
             const walker = document.createTreeWalker(
                 root,
                 NodeFilter.SHOW_TEXT,
@@ -355,7 +467,7 @@
             while (node = walker.nextNode()) {
                 translateTextNode(node);
             }
-            
+
             const elements = root.querySelectorAll('input, button, [title], [alt]');
             elements.forEach(translateAttributes);
         }
@@ -366,7 +478,97 @@
         translateNodeAndChildren(document.body || document.documentElement);
     }
 
-    // Set up MutationObserver to monitor dynamic changes and translate synchronously
+    // Intercept property setters to translate dynamically updated content synchronously (avoids flickering)
+    function safeDefineProperty(obj, prop, descriptor) {
+        try {
+            const raw = Object.getOwnPropertyDescriptor(obj, prop);
+            if (raw && raw.set) {
+                Object.defineProperty(obj, prop, {
+                    configurable: true,
+                    enumerable: true,
+                    get: raw.get,
+                    set: function (val) {
+                        try {
+                            if (typeof val === 'string' && chineseRegex.test(val)) {
+                                val = translateString(val);
+                            }
+                        } catch (e) {
+                            console.error(`Error translating property ${prop}:`, e);
+                        }
+                        raw.set.call(this, val);
+                    }
+                });
+            }
+        } catch (e) {
+            console.warn(`Failed to intercept property ${prop}:`, e);
+        }
+    }
+
+    // Set up prototype setter interceptions
+    function initInterceptors() {
+        // Intercept text node & element text updates
+        safeDefineProperty(Node.prototype, 'textContent');
+        safeDefineProperty(HTMLElement.prototype, 'innerText');
+        safeDefineProperty(Node.prototype, 'nodeValue');
+
+        // Intercept input value updates
+        safeDefineProperty(HTMLInputElement.prototype, 'value');
+        if (typeof HTMLButtonElement !== 'undefined') {
+            safeDefineProperty(HTMLButtonElement.prototype, 'value');
+        }
+        if (typeof HTMLSelectElement !== 'undefined') {
+            safeDefineProperty(HTMLSelectElement.prototype, 'value');
+        }
+        if (typeof HTMLTextAreaElement !== 'undefined') {
+            safeDefineProperty(HTMLTextAreaElement.prototype, 'value');
+        }
+
+        // Intercept setAttribute updates
+        try {
+            const rawSetAttribute = Element.prototype.setAttribute;
+            Element.prototype.setAttribute = function (name, value) {
+                try {
+                    if (typeof value === 'string' && ['placeholder', 'title', 'alt', 'value'].includes(name) && chineseRegex.test(value)) {
+                        value = translateString(value);
+                    }
+                } catch (e) {
+                    console.error(`Error translating attribute ${name}:`, e);
+                }
+                rawSetAttribute.call(this, name, value);
+            };
+        } catch (e) {
+            console.warn(`Failed to intercept setAttribute:`, e);
+        }
+
+        // Intercept innerHTML updates (avoids flickering for complex DOM modifications)
+        try {
+            const rawInnerHTMLDescriptor = Object.getOwnPropertyDescriptor(Element.prototype, 'innerHTML');
+            if (rawInnerHTMLDescriptor && rawInnerHTMLDescriptor.set) {
+                Object.defineProperty(Element.prototype, 'innerHTML', {
+                    configurable: true,
+                    enumerable: true,
+                    get: rawInnerHTMLDescriptor.get,
+                    set: function (val) {
+                        try {
+                            if (typeof val === 'string' && chineseRegex.test(val)) {
+                                const tempDiv = document.createElement('div');
+                                rawInnerHTMLDescriptor.set.call(tempDiv, val);
+                                translateNodeAndChildren(tempDiv);
+                                val = tempDiv.innerHTML;
+                            }
+                        } catch (e) {
+                            console.error("Error translating innerHTML:", e);
+                        }
+                        rawInnerHTMLDescriptor.set.call(this, val);
+                    }
+                });
+            }
+        } catch (e) {
+            console.warn("Failed to intercept innerHTML:", e);
+        }
+    }
+
+    // Set up MutationObserver to monitor structural changes
     function initObserver() {
         const observerConfig = {
             childList: true,
@@ -405,7 +607,10 @@
         observer.observe(document.documentElement, observerConfig);
     }
 
-    // Run translations
+    // Run prototype interceptors immediately at document-start (before any page scripts execute)
+    initInterceptors();
+
+    // Run initial translations
     translatePage();
 
     // Run when DOM structure is ready
